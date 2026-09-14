@@ -11087,6 +11087,15 @@ pub(crate) mod tests {
 
         client.init(&token_address);
 
+        client.init_tokenomics_config(&TokenomicsConfig {
+            staking_reward_rate: 500,
+            governance_quorum_percentage: 1000,
+            governance_voting_period: 3_600_000,
+            fee_model: FeeModel::Fixed,
+            min_fee: 100,
+            max_fee: 10000,
+        });
+
         let admin = Address::generate(&env);
         client.set_admin_address(&admin);
         let fee_recipient = Address::generate(&env);
@@ -11104,7 +11113,8 @@ pub(crate) mod tests {
         assert_eq!(client.get_total_task_escrows(), 5_000);
         assert!(client.check_balance_invariant());
 
-        // Execute task
+        // Execute task (advance timestamp exactly to interval)
+        set_timestamp(&env, 3_600);
         let keeper = Address::generate(&env);
         client.execute(&keeper, &task_id);
 

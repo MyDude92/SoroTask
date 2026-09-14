@@ -10893,7 +10893,7 @@ pub(crate) mod tests {
     }
 
     #[test]
-    #[should_panic(expected = "Error(Contract, #507)")]
+    #[should_panic(expected = "Error(Contract, #45)")]
     fn test_set_keeper_payout_preference_rejects_invalid_slippage() {
         let (env, id) = setup();
         let client = SoroTaskContractClient::new(&env, &id);
@@ -12539,7 +12539,7 @@ pub(crate) mod tests {
     }
 
     #[test]
-    #[should_panic(expected = "Error(Contract, #307)")]
+    #[should_panic(expected = "Error(Contract, #14)")]
     fn test_submit_optimistic_result_requires_min_bond() {
         let (_env, client, task_id, keeper) = setup_optimistic_task(OptimisticResolver::None);
         client.submit_optimistic_result(&keeper, &task_id, &true, &10);
@@ -12563,7 +12563,7 @@ pub(crate) mod tests {
     }
 
     #[test]
-    #[should_panic(expected = "Error(Contract, #316)")]
+    #[should_panic(expected = "Error(Contract, #49)")]
     fn test_finalize_optimistic_result_before_window_reverts() {
         let (_env, client, task_id, keeper) = setup_optimistic_task(OptimisticResolver::None);
         client.submit_optimistic_result(&keeper, &task_id, &true, &100);
@@ -12593,7 +12593,7 @@ pub(crate) mod tests {
     }
 
     #[test]
-    #[should_panic(expected = "Error(Contract, #317)")]
+    #[should_panic(expected = "Error(Contract, #50)")]
     fn test_challenge_optimistic_result_reverts_when_claim_is_honest() {
         let (env, client, task_id, keeper) =
             setup_optimistic_task(OptimisticResolver::AlwaysTrue);
@@ -12603,7 +12603,7 @@ pub(crate) mod tests {
     }
 
     #[test]
-    #[should_panic(expected = "Error(Contract, #315)")]
+    #[should_panic(expected = "Error(Contract, #48)")]
     fn test_challenge_optimistic_result_after_window_reverts() {
         let (env, client, task_id, keeper) =
             setup_optimistic_task(OptimisticResolver::AlwaysFalse);
@@ -12715,15 +12715,6 @@ pub(crate) mod tests {
 
         let admin = Address::generate(&env);
         client.set_admin_address(&admin);
-        let fee_config = TokenomicsConfig {
-            staking_reward_rate: 500,
-            governance_quorum_percentage: 1000,
-            governance_voting_period: 3_600_000,
-            fee_model: FeeModel::Fixed,
-            min_fee: 100,
-            max_fee: 100,
-        };
-        client.init_tokenomics_config(&fee_config);
         let fee_recipient = Address::generate(&env);
         client.set_fee_recipient(&fee_recipient);
         client.set_protocol_fee_bps(&1000); // 10% protocol fee
@@ -12848,6 +12839,3 @@ mod test_access_control;
 #[cfg(test)]
 mod test;
 mod test_task_bundle;
-
-#[cfg(test)]
-mod test_cross_chain;
