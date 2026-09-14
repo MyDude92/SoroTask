@@ -97,6 +97,7 @@ const nextConfig: NextConfig = {
     }
 
     return config;
+  },
   async headers() {
     return [
       {
