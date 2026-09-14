@@ -288,12 +288,17 @@
         }
       ]
     ],
+    [],
+    [],
+    [],
+    [],
+    [],
     []
   ],
   "ledger": {
     "protocol_version": 27,
     "sequence_number": 0,
-    "timestamp": 0,
+    "timestamp": 3600,
     "network_id": "0000000000000000000000000000000000000000000000000000000000000000",
     "base_reserve": 0,
     "min_persistent_entry_ttl": 4096,
@@ -420,7 +425,7 @@
                     "val": {
                       "vec": [
                         {
-                          "symbol": "Skipped"
+                          "symbol": "Success"
                         }
                       ]
                     }
@@ -584,7 +589,7 @@
                               "val": {
                                 "vec": [
                                   {
-                                    "symbol": "Skipped"
+                                    "symbol": "Passed"
                                   }
                                 ]
                               }
@@ -595,6 +600,326 @@
                               },
                               "val": {
                                 "u32": 5
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "detail"
+                              },
+                              "val": {
+                                "u32": 0
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "result"
+                              },
+                              "val": {
+                                "vec": [
+                                  {
+                                    "symbol": "Passed"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "step"
+                              },
+                              "val": {
+                                "u32": 6
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "detail"
+                              },
+                              "val": {
+                                "u32": 0
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "result"
+                              },
+                              "val": {
+                                "vec": [
+                                  {
+                                    "symbol": "Passed"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "step"
+                              },
+                              "val": {
+                                "u32": 7
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "detail"
+                              },
+                              "val": {
+                                "u32": 0
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "result"
+                              },
+                              "val": {
+                                "vec": [
+                                  {
+                                    "symbol": "Passed"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "step"
+                              },
+                              "val": {
+                                "u32": 8
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "detail"
+                              },
+                              "val": {
+                                "u32": 0
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "result"
+                              },
+                              "val": {
+                                "vec": [
+                                  {
+                                    "symbol": "Passed"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "step"
+                              },
+                              "val": {
+                                "u32": 9
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "detail"
+                              },
+                              "val": {
+                                "u32": 100
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "result"
+                              },
+                              "val": {
+                                "vec": [
+                                  {
+                                    "symbol": "Passed"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "step"
+                              },
+                              "val": {
+                                "u32": 10
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "detail"
+                              },
+                              "val": {
+                                "u32": 0
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "result"
+                              },
+                              "val": {
+                                "vec": [
+                                  {
+                                    "symbol": "Passed"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "step"
+                              },
+                              "val": {
+                                "u32": 11
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "detail"
+                              },
+                              "val": {
+                                "u32": 0
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "result"
+                              },
+                              "val": {
+                                "vec": [
+                                  {
+                                    "symbol": "Skipped"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "step"
+                              },
+                              "val": {
+                                "u32": 12
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "detail"
+                              },
+                              "val": {
+                                "u32": 0
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "result"
+                              },
+                              "val": {
+                                "vec": [
+                                  {
+                                    "symbol": "Passed"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "step"
+                              },
+                              "val": {
+                                "u32": 13
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "detail"
+                              },
+                              "val": {
+                                "u32": 100
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "result"
+                              },
+                              "val": {
+                                "vec": [
+                                  {
+                                    "symbol": "Passed"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "step"
+                              },
+                              "val": {
+                                "u32": 14
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "detail"
+                              },
+                              "val": {
+                                "u32": 0
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "result"
+                              },
+                              "val": {
+                                "vec": [
+                                  {
+                                    "symbol": "Passed"
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "step"
+                              },
+                              "val": {
+                                "u32": 15
                               }
                             }
                           ]
@@ -615,7 +940,7 @@
                       "symbol": "timestamp"
                     },
                     "val": {
-                      "u64": "0"
+                      "u64": "3600"
                     }
                   }
                 ]
@@ -675,7 +1000,7 @@
                       "symbol": "execution_nonce"
                     },
                     "val": {
-                      "u64": "0"
+                      "u64": "1"
                     }
                   },
                   {
@@ -691,7 +1016,7 @@
                       "symbol": "gas_balance"
                     },
                     "val": {
-                      "i128": "5000"
+                      "i128": "4900"
                     }
                   },
                   {
@@ -715,7 +1040,7 @@
                       "symbol": "last_run"
                     },
                     "val": {
-                      "u64": "0"
+                      "u64": "3600"
                     }
                   },
                   {
@@ -760,7 +1085,7 @@
           },
           "ext": "v0"
         },
-        "live_until": 4095
+        "live_until": 100000
       },
       {
         "entry": {
@@ -814,7 +1139,7 @@
                       "symbol": "completed_at"
                     },
                     "val": {
-                      "u64": "0"
+                      "u64": "3600"
                     }
                   },
                   {
@@ -824,7 +1149,7 @@
                     "val": {
                       "vec": [
                         {
-                          "symbol": "NeverRun"
+                          "symbol": "Success"
                         }
                       ]
                     }
@@ -834,7 +1159,7 @@
                       "symbol": "run_count"
                     },
                     "val": {
-                      "u64": "0"
+                      "u64": "1"
                     }
                   }
                 ]
@@ -994,7 +1319,7 @@
                         ]
                       },
                       "val": {
-                        "i128": "5000"
+                        "i128": "4900"
                       }
                     }
                   ]
@@ -1174,7 +1499,59 @@
                       "symbol": "amount"
                     },
                     "val": {
-                      "i128": "5000"
+                      "i128": "4900"
+                    }
+                  },
+                  {
+                    "key": {
+                      "symbol": "authorized"
+                    },
+                    "val": {
+                      "bool": true
+                    }
+                  },
+                  {
+                    "key": {
+                      "symbol": "clawback"
+                    },
+                    "val": {
+                      "bool": false
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CBUSYNQKASUYFWYC3M2GUEDMX4AIVWPALDBYJPNK6554BREHTGZ2IUNF",
+              "key": {
+                "vec": [
+                  {
+                    "symbol": "Balance"
+                  },
+                  {
+                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"
+                  }
+                ]
+              },
+              "durability": "persistent",
+              "val": {
+                "map": [
+                  {
+                    "key": {
+                      "symbol": "amount"
+                    },
+                    "val": {
+                      "i128": "10"
                     }
                   },
                   {
@@ -1227,6 +1604,58 @@
                     },
                     "val": {
                       "i128": "5000"
+                    }
+                  },
+                  {
+                    "key": {
+                      "symbol": "authorized"
+                    },
+                    "val": {
+                      "bool": true
+                    }
+                  },
+                  {
+                    "key": {
+                      "symbol": "clawback"
+                    },
+                    "val": {
+                      "bool": false
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "ext": "v0"
+        },
+        "live_until": 518400
+      },
+      {
+        "entry": {
+          "last_modified_ledger_seq": 0,
+          "data": {
+            "contract_data": {
+              "ext": "v0",
+              "contract": "CBUSYNQKASUYFWYC3M2GUEDMX4AIVWPALDBYJPNK6554BREHTGZ2IUNF",
+              "key": {
+                "vec": [
+                  {
+                    "symbol": "Balance"
+                  },
+                  {
+                    "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARQG5"
+                  }
+                ]
+              },
+              "durability": "persistent",
+              "val": {
+                "map": [
+                  {
+                    "key": {
+                      "symbol": "amount"
+                    },
+                    "val": {
+                      "i128": "90"
                     }
                   },
                   {
